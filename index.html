@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies</title>
+  </head>
+  <body>
+    <main class="container">
+      <table class="table mb-3">
+        <thead>
+          <tr scope="row">
+            <th scope="col">Név</th>
+            <th scope="col" class="w-50">Műfajai</th>
+            <th scope="col">Időtartam (percben)</th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+      </table>
+      <form class="form" id="movieForm">
+        <div class="mb-3">
+          <label for="movieTitleInput" class="form-label">Film címe</label>
+          <input type="text" id="movieTitleInput" class="form-control">
+        </div>
+        <div class="mb-3">
+          <label for="movieDurationInput" class="form-label">Film hossza (percben)</label>
+          <input type="number" id="movieDurationInput" class="form-control">
+        </div>
+        <button class="mb-3 btn btn-info" type="submit">Küldés</button>
+      </form>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
